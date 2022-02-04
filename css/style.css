@@ -29,26 +29,96 @@ img{
 	display:flex;
 }
 
+.column{
+	flex-direction: column;
+}
+
+
 /* left nav bar */
 
 main nav#left-navbar{
-	flex-basis:150px;
+	padding:.7em 1em 0 .7em;
+	width:150px;
 	flex-shrink:0;
+	justify-content: space-between;
 	background-color: black;
 }
+
+main nav#left-navbar div#main-logo{
+	width:75%;
+	padding-bottom:.8em;
+}
+
+main nav#left-navbar i.fas{
+	vertical-align: middle;
+}
+
+main nav#left-navbar .nav-icon, 
+main nav#left-navbar .playlist>h2{
+	padding:.3em 0;
+}
+
+main nav#left-navbar .nav-icon span{
+	font-size:.6em;
+}
+
+main nav#left-navbar .playlist>h2{
+	padding-top:1.2em;
+	text-transform:uppercase;
+}
+
+main nav#left-navbar .playlist span,
+main nav#left-navbar .playlist ul li,
+main nav#left-navbar .playlist>h2{
+	font-size:.7em;
+}
+
+main nav#left-navbar .playlist ul li{
+	padding:.8em 0;
+}
+
+main nav#left-navbar nav.lower .nav-icon.install::before{
+	font-family: "Font Awesome 5 Free";
+	content: "\f358";
+	font-size:.5em;
+}
+
+main nav#left-navbar nav.lower .user{
+	font-size:.5em;
+	padding-bottom:.5em;
+}
+
+main nav#left-navbar nav.lower .user::before{
+	font-family: "Font Awesome 5 Free";
+	content: "\f2bd";
+	font-size:2em;
+	vertical-align: middle;
+	padding-right:.4em;
+}
+
+main nav#left-navbar nav.lower p{
+	width:100%;
+	display: inline-block;
+	border-top: .1em solid rgb(80, 80, 80);
+}
+
+main nav#left-navbar .playlist>h2, 
+main nav#left-navbar nav.lower .user{
+	color:white;
+}
+
 
 main nav#left-navbar, 
 main section#main-content
 {
-	height:92vh;
+	height:91vh;
 }
 
 /* main content section */
 
 main section#main-content{
-	flex-shrink:0;
+	flex-grow:1;
 	overflow-y: auto;
-	flex-basis:calc(100% - 150px);
 	background-color:rgb(20, 25, 34);
 	
 }

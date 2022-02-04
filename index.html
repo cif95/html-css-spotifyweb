@@ -8,6 +8,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<!-- Font-Awesome cdn -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<!-- css stylesheet -->
 	<link rel="stylesheet" href="css/style.css">
 	<title>Spotify Web</title>
@@ -16,11 +18,47 @@
 	<main>
 		<div class="row">
 			<!-- left navbar -->
-			<nav id="left-navbar">
-				<div id="main-logo">
-					<!-- <img src="img/logo.svg" alt="logo spotify"> -->
-				</div>
-				<div class="nav-icon"></div>
+			<nav id="left-navbar" class="row column">
+				<nav class="upper">
+					<div id="main-logo">
+						<img src="img/logo.svg" alt="logo spotify">
+					</div>
+					<div class="nav-icon">
+						<i class="fas fa-home"></i>
+						<span>Home</span>
+					</div>
+					<div class="nav-icon">
+						<i class="fas fa-search"></i>
+						<span>Cerca</span>
+					</div>
+					<div class="nav-icon">
+						<i class="fas fa-book"></i>
+						<span>La tua libreria</span>
+					</div>
+					<section class="playlist">
+						<h2>Playlist</h2>
+						<i class="fas fa-plus-square fa-2x"></i>
+						<span>Crea playlist</span>
+						<ul>
+							<li>Nome playlist</li>
+							<li>Nome playlist</li>
+							<li>Nome playlist</li>
+							<li>Nome playlist</li>
+							<li>Nome playlist</li>
+							<li>Nome playlist</li>
+							<li>Nome playlist</li>
+						</ul>
+					</section>
+				</nav>
+				<nav class="lower">
+					<div class="nav-icon install">
+						<span>Installa app</span>
+					</div>
+					<p></p>
+					<div class="user">
+						<span>John Doe</span>
+					</div>
+				</nav>
 			</nav>
 			<!-- main section -->
 			<section id="main-content">
