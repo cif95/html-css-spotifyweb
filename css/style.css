@@ -1,0 +1,33 @@
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+.row{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main nav#left-navbar{
+	flex-basis:12%;
+	flex-shrink:0;
+	background-color: black;
+}
+
+main section#main-content{
+	flex-basis:88%;
+	flex-shrink:0;
+	background-color:rgb(20, 25, 34);
+}
+
+main section#main-content, 
+main nav#left-navbar{
+	height:90vh;
+}
+
+footer#bottom-bar{
+	height:10vh;
+	background-color: rgb(40, 40, 40);
+}
