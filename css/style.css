@@ -29,11 +29,21 @@ img{
 	display:flex;
 }
 
+/* left nav bar */
+
 main nav#left-navbar{
 	flex-basis:150px;
 	flex-shrink:0;
 	background-color: black;
 }
+
+main nav#left-navbar, 
+main section#main-content
+{
+	height:92vh;
+}
+
+/* main content section */
 
 main section#main-content{
 	flex-shrink:0;
@@ -43,15 +53,12 @@ main section#main-content{
 	
 }
 
-main section#main-content, 
-main nav#left-navbar{
-	height:92vh;
-}
+/* main content section top add */
 
 main section#main-content div#add{
 	text-align:right;
 	line-height:51px;
-	padding-right:.2em;
+	padding:.8em .2em .8em 0;
 	background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -64,6 +71,8 @@ main section#main-content div#add button.upgrade{
 	border:1px solid white;
 	background-color: rgba(0, 0, 0, 0.4);
 }
+
+/* main content section navbar */
 
 main section#main-content nav#main-navbar{
 	justify-content: center;
@@ -83,7 +92,7 @@ main section#main-content nav#main-navbar ul.row li{
 	font-size:.8em;
 }
 
-
+/* main content section categories */
 
 
 main section#main-content .categories{
@@ -106,6 +115,8 @@ main section#main-content .categories .group .album>figure{
 
 
 
+
+/* bottom bar */
 
 footer#bottom-bar{
 	height:9vh;
