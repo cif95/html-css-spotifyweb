@@ -18,14 +18,14 @@
 	<main>
 		<div class="row">
 			<!-- left navbar -->
-			<nav id="left-navbar" class="row column">
-				<nav class="upper">
+			<nav id="left-navbar" class="column">
+				<div class="upper-nav">
 					<div id="main-logo">
 						<img src="img/logo.svg" alt="logo spotify">
 					</div>
 					<div class="nav-icon">
 						<i class="fas fa-home"></i>
-						<span>Home</span>
+						<span class="white-tx">Home</span>
 					</div>
 					<div class="nav-icon">
 						<i class="fas fa-search"></i>
@@ -36,7 +36,7 @@
 						<span>La tua libreria</span>
 					</div>
 					<section class="playlist">
-						<h2>Playlist</h2>
+						<h2 class="white-tx">Playlist</h2>
 						<i class="fas fa-plus-square fa-2x"></i>
 						<span>Crea playlist</span>
 						<ul>
@@ -49,22 +49,22 @@
 							<li>Nome playlist</li>
 						</ul>
 					</section>
-				</nav>
-				<nav class="lower">
+				</div>
+				<div class="lower-nav">
 					<div class="nav-icon install">
 						<span>Installa app</span>
 					</div>
 					<p></p>
 					<div class="user">
-						<span>John Doe</span>
+						<span class="white-tx">John Doe</span>
 					</div>
-				</nav>
+				</div>
 			</nav>
 			<!-- main section -->
 			<section id="main-content">
 				<!-- top add upgrade-->
 				<div id="add">
-					<button class="upgrade"><a href="#">Effettua l'upgrade</a></button>
+					<button class="upgrade">Effettua l'upgrade</button>
 				</div>
 				<!-- main section navbar -->
 				<nav id="main-navbar" class="row">
@@ -79,27 +79,120 @@
 				</nav>
 				<!-- categories and albums -->
 				<div class="categories">
-					<h2 class="categories-title">Recently played</h2>
+					<h2 class="categories-title white-tx">Recently played</h2>
 					<div class="row group">
 						<div class="album">
 							<figure>
 								<img src="img/metal_lifting.jpg" alt="album picture">
 								<figcaption>
-									<span>Album title</span>
-									<span>Album subtitle</span>
+									<h4 class="white-tx">Heavy Metal</h4>
+									<span>subtitle</span>
 								</figcaption>
 							</figure>
-						</div>	
+						</div>
+						<div class="album">
+							<figure>
+								<img src="img/metal_lifting.jpg" alt="album picture">
+								<figcaption>
+									<h4 class="white-tx">Heavy Metal</h4>
+									<span>subtitle</span>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="album">
+							<figure>
+								<img src="img/metal_lifting.jpg" alt="album picture">
+								<figcaption>
+									<h4 class="white-tx">Heavy Metal</h4>
+									<span>subtitle</span>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="album">
+							<figure>
+								<img src="img/metal_lifting.jpg" alt="album picture">
+								<figcaption>
+									<h4 class="white-tx">Heavy Metal</h4>
+									<span>subtitle</span>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="album">
+							<figure>
+								<img src="img/metal_lifting.jpg" alt="album picture">
+								<figcaption>
+									<h4 class="white-tx">Heavy Metal</h4>
+									<span>subtitle</span>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="album">
+							<figure>
+								<img src="img/metal_lifting.jpg" alt="album picture">
+								<figcaption>
+									<h4 class="white-tx">Heavy Metal</h4>
+									<span>subtitle</span>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+				<!-- created for you category -->
+				<div class="categories">
+					<h2 class="categories-title white-tx">Creato per John Doe</h2>
+					<div class="row group">
+						<div class="album">
+							<figure>
+								<img src="img/metal_lifting.jpg" alt="album picture">
+								<figcaption>
+									<h4 class="white-tx">Heavy Metal</h4>
+									<span>subtitle</span>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="album">
+							<figure>
+								<img src="img/metal_lifting.jpg" alt="album picture">
+								<figcaption>
+									<h4 class="white-tx">Heavy Metal</h4>
+									<span>subtitle</span>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+				<!-- most popular artists category-->
+				<div class="categories">
+					<h2 class="categories-title white-tx">Artisti più popolari</h2>
+					<div class="row group">
+						<div class="album">
+							<figure>
+								<img src="img/metal_lifting.jpg" alt="album picture">
+								<figcaption>
+									<h4 class="white-tx">Heavy Metal</h4>
+									<span>subtitle</span>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="album">
+							<figure>
+								<img src="img/metal_lifting.jpg" alt="album picture">
+								<figcaption>
+									<h4 class="white-tx">Heavy Metal</h4>
+									<span>subtitle</span>
+								</figcaption>
+							</figure>
+						</div>
 					</div>
 				</div>
 			</section>
 		</div>
 	</main>
 	<!-- bottom bar -->
-	<footer id="bottom-bar">
-		<div class="album"></div>
-		<div class="player"></div>
-		<div class="setting"></div>
+	<footer id="bottom-bar" class="row">
+		<div class="album">Song/Album</div>
+		<div class="player">Player</div>
+		<div class="setting">Settings</div>
 	</footer>
 </body>
 </html>

@@ -14,7 +14,6 @@ main{
 
 a{
 	text-decoration: none;
-	color:white;
 }
 
 ul li{
@@ -30,7 +29,12 @@ img{
 }
 
 .column{
+	display: flex;
 	flex-direction: column;
+}
+
+.white-tx{
+	color:white;
 }
 
 
@@ -64,7 +68,6 @@ main nav#left-navbar .nav-icon span{
 
 main nav#left-navbar .playlist>h2{
 	padding-top:1.2em;
-	text-transform:uppercase;
 }
 
 main nav#left-navbar .playlist span,
@@ -77,40 +80,34 @@ main nav#left-navbar .playlist ul li{
 	padding:.8em 0;
 }
 
-main nav#left-navbar nav.lower .nav-icon.install::before{
+main nav#left-navbar .lower-nav .nav-icon.install::before{
 	font-family: "Font Awesome 5 Free";
 	content: "\f358";
 	font-size:.5em;
 }
 
-main nav#left-navbar nav.lower .user{
-	font-size:.5em;
+main nav#left-navbar .lower-nav .user{
+	font-size:.6em;
 	padding-bottom:.5em;
 }
 
-main nav#left-navbar nav.lower .user::before{
+main nav#left-navbar .lower-nav .user::before{
 	font-family: "Font Awesome 5 Free";
 	content: "\f2bd";
 	font-size:2em;
 	vertical-align: middle;
-	padding-right:.4em;
+	padding-right:.2em;
 }
 
-main nav#left-navbar nav.lower p{
+main nav#left-navbar .lower-nav p{
 	width:100%;
 	display: inline-block;
 	border-top: .1em solid rgb(80, 80, 80);
 }
 
-main nav#left-navbar .playlist>h2, 
-main nav#left-navbar nav.lower .user{
-	color:white;
-}
-
 
 main nav#left-navbar, 
-main section#main-content
-{
+main section#main-content{
 	height:91vh;
 }
 
@@ -120,47 +117,50 @@ main section#main-content{
 	flex-grow:1;
 	overflow-y: auto;
 	background-color:rgb(20, 25, 34);
-	
 }
 
 /* main content section top add */
 
 main section#main-content div#add{
 	text-align:right;
-	line-height:51px;
 	padding:.8em .2em .8em 0;
 	background-color: rgba(0, 0, 0, 0.4);
 }
 
 main section#main-content div#add button.upgrade{
 	font-size:.6em;
+	color:white;
 	min-width:160px;
 	padding:.8em 2.7em;
 	border-radius: 1.5em;
-	text-transform: uppercase;
 	border:1px solid white;
 	background-color: rgba(0, 0, 0, 0.4);
 }
+
+div#add button.upgrade, 
+nav#main-navbar ul.row, 
+main nav#left-navbar .playlist>h2{
+	text-transform: uppercase;
+}
+
 
 /* main content section navbar */
 
 main section#main-content nav#main-navbar{
 	justify-content: center;
 	align-items:center;
-	align-content:flex-start;
 }
 
 main section#main-content nav#main-navbar ul.row{
 	padding:.5em 0;
 	flex-wrap:wrap;
-	text-transform: uppercase;
 }
 
 main section#main-content nav#main-navbar ul.row li{
-	flex-shrink: 0;
 	padding:1em 1em;
 	font-size:.8em;
 }
+
 
 /* main content section categories */
 
@@ -169,18 +169,27 @@ main section#main-content .categories{
 	padding:1em;
 }
 
+#main-content .categories .categories-title{
+	font-size:1.2em;
+}
+
 main section#main-content .categories .row.group{
 	flex-wrap: wrap;
 }
 
 main section#main-content .categories .group .album{
-	width:calc(100% / 6);
+	width:150px;
+	margin-right:2em;
 	padding:2em .7em 0 0;
 	text-align: center;
 }
 
-main section#main-content .categories .group .album>figure{
+#main-content .categories .group .album>figure{
 	width:10em;
+}
+
+#main-content .categories .group .album>figure figcaption>h4{
+	font-size:1em;
 }
 
 
@@ -190,5 +199,7 @@ main section#main-content .categories .group .album>figure{
 
 footer#bottom-bar{
 	height:9vh;
+	align-items: center;
+	justify-content:space-between;
 	background-color: rgb(40, 40, 40);
 }
