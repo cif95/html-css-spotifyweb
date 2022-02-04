@@ -4,6 +4,18 @@
 	padding:0;
 }
 
+main{
+	color:white;
+}
+
+ul li{
+	list-style-type: none;
+}
+
+img{
+	width:100%;
+}
+
 .row{
 	display:flex;
 }
@@ -22,27 +34,41 @@ main section#main-content{
 
 main section#main-content, 
 main nav#left-navbar{
-	height:88vh;
+	height:92vh;
 }
 
 main section#main-content div#add{
 	background-color: rgba(0, 0, 0, 0.4);
 	text-align:right;
 	line-height:77px;
-	color:white;
 }
-
 
 main section#main-content nav#main-navbar .row{
 	justify-content: center;
-	color:white;
-	height:10vh;
+	align-items: center;
+	height:5vh;
 }
 
 main section#main-content div#add,
 footer#bottom-bar{
-	height:12vh;
+	height:8vh;
 }
+
+main section#main-content .categories{
+	padding:1em;
+}
+
+main section#main-content .categories .group .album{
+	width:10em;
+	padding:2em .7em 0 0;
+	text-align: center;
+}
+
+main section#main-content .categories .group .album>figure{
+	width:100%;
+}
+
+
 
 footer#bottom-bar{
 	background-color: rgb(40, 40, 40);
