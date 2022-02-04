@@ -18,21 +18,21 @@
 	<main>
 		<div class="row">
 			<!-- left navbar -->
-			<nav id="left-navbar" class="column">
-				<div class="upper-nav">
+			<nav id="left-navbar" class="col">
+				<div id="upper-nav">
 					<div id="main-logo">
 						<img src="img/logo.svg" alt="logo spotify">
 					</div>
 					<div class="nav-icon">
-						<i class="fas fa-home"></i>
+						<img src="img/home.svg" alt="icona home">
 						<span class="white-tx">Home</span>
 					</div>
 					<div class="nav-icon">
-						<i class="fas fa-search"></i>
+						<img src="img/search.svg" alt="icona cerca">
 						<span>Cerca</span>
 					</div>
 					<div class="nav-icon">
-						<i class="fas fa-book"></i>
+						<img src="img/libreria.svg" alt="icona libreria">
 						<span>La tua libreria</span>
 					</div>
 					<section class="playlist">
@@ -50,12 +50,13 @@
 						</ul>
 					</section>
 				</div>
-				<div class="lower-nav">
-					<div class="nav-icon install">
+				<div id="lower-nav">
+					<div class="nav-icon">
+						<img src="img/download.svg" alt="icona download">
 						<span>Installa app</span>
 					</div>
-					<p></p>
 					<div class="user">
+						<img src="img/profile.svg" alt="icona profilo">
 						<span class="white-tx">John Doe</span>
 					</div>
 				</div>
@@ -79,11 +80,11 @@
 				</nav>
 				<!-- categories and albums -->
 				<div class="categories">
-					<h2 class="categories-title white-tx">Recently played</h2>
-					<div class="row group">
+					<h2 class="category-title white-tx">Recently played</h2>
+					<div class="row">
 						<div class="album">
 							<figure>
-								<img src="img/metal_lifting.jpg" alt="album picture">
+								<img src="img/metal_lifting.jpg" alt="heavy metal album picture">
 								<figcaption>
 									<h4 class="white-tx">Heavy Metal</h4>
 									<span>subtitle</span>
@@ -92,27 +93,27 @@
 						</div>
 						<div class="album">
 							<figure>
-								<img src="img/metal_lifting.jpg" alt="album picture">
+								<img src="img/stranger.jpeg" alt="stranger things album picture">
 								<figcaption>
-									<h4 class="white-tx">Heavy Metal</h4>
+									<h4 class="white-tx">Stranger Things, Vol.1( a Netflix original series playlist)</h4>
+									<span>Kyle Dixon and Michal Stain</span>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="album">
+							<figure>
+								<img src="img/aquietplace.jpeg" alt="album picture">
+								<figcaption>
+									<h4 class="white-tx">A quiet place</h4>
 									<span>subtitle</span>
 								</figcaption>
 							</figure>
 						</div>
 						<div class="album">
 							<figure>
-								<img src="img/metal_lifting.jpg" alt="album picture">
+								<img src="img/split.jpeg" alt="album picture">
 								<figcaption>
-									<h4 class="white-tx">Heavy Metal</h4>
-									<span>subtitle</span>
-								</figcaption>
-							</figure>
-						</div>
-						<div class="album">
-							<figure>
-								<img src="img/metal_lifting.jpg" alt="album picture">
-								<figcaption>
-									<h4 class="white-tx">Heavy Metal</h4>
+									<h4 class="white-tx">Split</h4>
 									<span>subtitle</span>
 								</figcaption>
 							</figure>
@@ -136,11 +137,9 @@
 							</figure>
 						</div>
 					</div>
-				</div>
-				<!-- created for you category -->
-				<div class="categories">
-					<h2 class="categories-title white-tx">Creato per John Doe</h2>
-					<div class="row group">
+					<!-- created for you category -->
+					<h2 class="category-title white-tx">Creato per John Doe</h2>
+					<div class="row">
 						<div class="album">
 							<figure>
 								<img src="img/metal_lifting.jpg" alt="album picture">
@@ -160,11 +159,9 @@
 							</figure>
 						</div>
 					</div>
-				</div>
-				<!-- most popular artists category-->
-				<div class="categories">
-					<h2 class="categories-title white-tx">Artisti più popolari</h2>
-					<div class="row group">
+					<!-- most popular artists category-->
+					<h2 class="category-title white-tx">Artisti più popolari</h2>
+					<div class="row">
 						<div class="album">
 							<figure>
 								<img src="img/metal_lifting.jpg" alt="album picture">

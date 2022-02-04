@@ -12,122 +12,127 @@ main{
 	color:rgb(126, 126, 130);
 }
 
-a{
-	text-decoration: none;
-}
-
 ul li{
 	list-style-type:none;
-}
-
-img{
-	width:100%;
 }
 
 .row{
 	display:flex;
 }
 
-.column{
+.col{
 	display: flex;
 	flex-direction: column;
 }
 
 .white-tx{
+	font-weight: bold;
 	color:white;
 }
 
 
 /* left nav bar */
 
-main nav#left-navbar{
-	padding:.7em 1em 0 .7em;
-	width:150px;
+nav#left-navbar{
+	padding:.7em .7em 0 .7em;
+	width:160px;
 	flex-shrink:0;
 	justify-content: space-between;
 	background-color: black;
 }
 
-main nav#left-navbar div#main-logo{
-	width:75%;
-	padding-bottom:.8em;
+nav#left-navbar img:not(#main-logo img){
+	width:10%;
 }
 
-main nav#left-navbar i.fas{
+nav#left-navbar img,
+nav#left-navbar i.fas{
 	vertical-align: middle;
 }
 
-main nav#left-navbar .nav-icon, 
-main nav#left-navbar .playlist>h2{
+
+/* upper left nav bar */
+
+nav#left-navbar #upper-nav div#main-logo{
+	width:50%;
+	padding-bottom:.5em;
+}
+
+nav#left-navbar #upper-nav .nav-icon, 
+nav#left-navbar #upper-nav .playlist>h2{
 	padding:.3em 0;
 }
 
-main nav#left-navbar .nav-icon span{
+nav#left-navbar #upper-nav .nav-icon span{
 	font-size:.6em;
 }
 
-main nav#left-navbar .playlist>h2{
-	padding-top:1.2em;
+nav#left-navbar #upper-nav .playlist>h2{
+	padding:1em 0;
 }
 
-main nav#left-navbar .playlist span,
-main nav#left-navbar .playlist ul li,
-main nav#left-navbar .playlist>h2{
-	font-size:.7em;
+nav#left-navbar #upper-nav .playlist span,
+nav#left-navbar #upper-nav .playlist ul li,
+nav#left-navbar #upper-nav .playlist>h2{
+	font-size:.6em;
 }
 
-main nav#left-navbar .playlist ul li{
-	padding:.8em 0;
+nav#left-navbar #upper-nav .playlist ul li{
+	padding:.7em 0;
 }
 
-main nav#left-navbar .lower-nav .nav-icon.install::before{
-	font-family: "Font Awesome 5 Free";
-	content: "\f358";
-	font-size:.5em;
-}
+/* lower left nav bar */
 
-main nav#left-navbar .lower-nav .user{
+nav#left-navbar #lower-nav{
 	font-size:.6em;
 	padding-bottom:.5em;
 }
 
-main nav#left-navbar .lower-nav .user::before{
-	font-family: "Font Awesome 5 Free";
-	content: "\f2bd";
-	font-size:2em;
-	vertical-align: middle;
-	padding-right:.2em;
+nav#left-navbar #lower-nav .nav-icon{
+	padding-bottom:1em;
+	border-bottom:1px solid grey;
 }
 
-main nav#left-navbar .lower-nav p{
-	width:100%;
-	display: inline-block;
-	border-top: .1em solid rgb(80, 80, 80);
+nav#left-navbar #lower-nav .user{
+	padding-top:1em;
+}
+
+nav#left-navbar #lower-nav .user img{
+	border-radius: 50%;
+	background-color: rgb(128, 128, 128);
+
 }
 
 
-main nav#left-navbar, 
-main section#main-content{
-	height:91vh;
+nav#left-navbar, 
+section#main-content{
+	height:93vh;
 }
 
 /* main content section */
 
-main section#main-content{
+
+section#main-content{
 	flex-grow:1;
 	overflow-y: auto;
 	background-color:rgb(20, 25, 34);
 }
 
+section#main-content img{
+	width:100%;
+}
+
+
 /* main content section top add */
 
-main section#main-content div#add{
+
+section#main-content div#add{
 	text-align:right;
 	padding:.8em .2em .8em 0;
 	background-color: rgba(0, 0, 0, 0.4);
 }
 
-main section#main-content div#add button.upgrade{
+section#main-content div#add button.upgrade{
 	font-size:.6em;
 	color:white;
 	min-width:160px;
@@ -146,60 +151,59 @@ main nav#left-navbar .playlist>h2{
 
 /* main content section navbar */
 
-main section#main-content nav#main-navbar{
+section#main-content nav#main-navbar{
 	justify-content: center;
 	align-items:center;
 }
 
-main section#main-content nav#main-navbar ul.row{
-	padding:.5em 0;
+section#main-content nav#main-navbar ul.row{
+	padding:.2em 0;
 	flex-wrap:wrap;
 }
 
-main section#main-content nav#main-navbar ul.row li{
+section#main-content nav#main-navbar ul.row li{
 	padding:1em 1em;
-	font-size:.8em;
+	font-size:.5em;
 }
 
 
 /* main content section categories */
 
 
-main section#main-content .categories{
-	padding:1em;
+section#main-content .categories{
+	padding:0 1em;
 }
 
-#main-content .categories .categories-title{
-	font-size:1.2em;
+section#main-content .categories .category-title{
+	font-size:1em;
+	padding:1em 0;
 }
 
-main section#main-content .categories .row.group{
-	flex-wrap: wrap;
+section#main-content .categories .row{
+	gap:1em;
 }
 
-main section#main-content .categories .group .album{
-	width:150px;
-	margin-right:2em;
-	padding:2em .7em 0 0;
+section#main-content .categories .row .album{
+	width:calc(90% / 6);
 	text-align: center;
 }
 
-#main-content .categories .group .album>figure{
-	width:10em;
+#main-content .categories .album>figure figcaption>h4{
+	font-size:.7em;
 }
 
-#main-content .categories .group .album>figure figcaption>h4{
-	font-size:1em;
+#main-content .categories .album>figure figcaption>span{
+	font-size:.5em;
 }
-
-
 
 
 /* bottom bar */
 
 footer#bottom-bar{
-	height:9vh;
+	height:7vh;
 	align-items: center;
 	justify-content:space-between;
 	background-color: rgb(40, 40, 40);
 }
+
+
