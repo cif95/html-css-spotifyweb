@@ -8,7 +8,8 @@ body{
 	font-family: 'Montserrat', sans-serif;
 }
 
-main{
+main,
+footer{
 	color:rgb(126, 126, 130);
 }
 
@@ -28,6 +29,16 @@ ul li{
 .white-tx{
 	font-weight: bold;
 	color:white;
+}
+
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.float-left{
+	float:left;
 }
 
 
@@ -218,11 +229,63 @@ footer#bottom-bar{
 	min-height:50px;
 	position:fixed;
 	bottom:0;
+	font-size:.7em;
 	left:0;
 	right:0;
 	align-items: center;
 	justify-content:space-between;
 	background-color: rgb(40, 40, 40);
 }
+
+footer#bottom-bar section.album{
+	padding-left:.5em;
+}
+
+footer#bottom-bar section.album figure{
+	height:7vh;
+	padding:.5em 0;
+}
+
+
+footer#bottom-bar section.album i{
+	padding-top:.5em;
+}
+
+footer#bottom-bar section.album figure img{
+	height:90%;
+	padding-right:.5em;
+}
+
+footer#bottom-bar section.album figure>figcaption .album-title{
+	padding-right:5em;
+}
+
+footer#bottom-bar section.album figure>figcaption .song-name{
+	font-size:.6em;
+} 
+
+footer#bottom-bar section.player div.icons{
+	text-align:center;
+	font-size:.7em;
+}
+
+footer#bottom-bar section.player div.icons i{
+	margin-right:1em;
+}
+
+footer#bottom-bar section.player div.song-slider{
+	width:250px;
+	margin-top:.5em;
+	height:2px;
+	background-color:rgb(126, 126, 130);
+	border-radius: 20px;
+}
+
+
+
+
+
+
+
 
 
