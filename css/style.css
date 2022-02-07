@@ -13,6 +13,11 @@ footer{
 	color:rgb(126, 126, 130);
 }
 
+a{
+	text-decoration: none;
+	color:rgb(126, 126, 130);
+}
+
 ul li{
 	list-style-type:none;
 }
@@ -30,17 +35,6 @@ ul li{
 	font-weight: bold;
 	color:white;
 }
-
-.clearfix::after{
-	content: "";
-	display: table;
-	clear: both;
-}
-
-.float-left{
-	float:left;
-}
-
 
 /* left nav bar */
 
@@ -90,6 +84,13 @@ nav#left-navbar #upper-nav div.active::before{
 	height:25px;
 	background:rgb(89, 184, 12);
 	left:0;
+}
+
+nav#left-navbar .nav-icon:hover,
+nav#left-navbar li:hover, 
+nav#left-navbar .playlist i:hover{
+	color:white;
+	cursor:pointer;
 }
 
 nav#left-navbar #upper-nav .playlist{
@@ -168,6 +169,10 @@ section#main-content div#add .btn-upgrade{
 	background-color: rgba(0, 0, 0, 0.4);
 }
 
+section#main-content div#add .btn-upgrade:hover{
+	font-size:.65em;
+}
+
 div#add button.upgrade, 
 nav#main-navbar ul.row, 
 main nav#left-navbar .playlist>h2{
@@ -193,6 +198,10 @@ section#main-content nav#main-navbar ul.row li{
 	font-size:.9em;
 }
 
+section#main-content nav#main-navbar ul li a:hover{
+	color:white;
+}
+
 section#main-content nav#main-navbar ul li.active{
 	position:relative;
 }
@@ -213,7 +222,7 @@ section#main-content nav#main-navbar ul li.active::before{
 
 
 section#main-content .categories{
-	padding:0 2em;
+	padding:0 2em 2em;
 }
 
 section#main-content .categories .category-title{
@@ -227,7 +236,7 @@ section#main-content .categories p{
 
 section#main-content .categories .row{
 	align-items:flex-start;
-	padding-top:1em;
+	padding:1.5em 0;
 }
 
 section#main-content .categories .row.recently-plyd{
@@ -266,7 +275,7 @@ footer#bottom-bar{
 	min-height:50px;
 	position:fixed;
 	bottom:0;
-	font-size:.6em;
+	font-size:.7em;
 	left:0;
 	right:0;
 	align-items: center;
@@ -276,6 +285,10 @@ footer#bottom-bar{
 
 footer#bottom-bar img{
 	width:20%;
+}
+
+footer#bottom-bar i:hover{
+	color:white;
 }
 
 footer#bottom-bar section.album{
@@ -288,6 +301,10 @@ footer#bottom-bar section.album .song-name{
 	font-size:.6em;
 } 
 
+footer#bottom-bar p.song-name:hover{
+	text-decoration: underline;
+}
+
 footer#bottom-bar section.album .interactions i:first-child{
 	margin:0 8px;
 }
@@ -295,8 +312,11 @@ footer#bottom-bar section.album .interactions i:first-child{
 footer#bottom-bar section.player div.icons{
 	justify-content:center;
 	align-items: center;
-	/* font-size:.8em; */
 
+}
+
+footer#bottom-bar i.far.fa-play-circle.fa-2x:hover{
+	font-size:2.2em;
 }
 
 footer#bottom-bar section.player i,
@@ -306,26 +326,17 @@ footer#bottom-bar section.settings i{
 
 footer#bottom-bar div.player-slider{
 	width:25vw;
-	margin-top:.7em;
+	margin:.7em 0;
 	height:3px;
 	background-color:rgb(99, 99, 99);
 	border-radius:20px;
 	position:relative;
 } 
 
-footer#bottom-bar  div.player-slider span{
-	position:absolute;
-	border-radius:20px;
-	bottom:0;
-	left:0;
-	height:2px;
-	width:5em;
-	background-color:rgb(194, 194, 194);
-}
 
 footer#bottom-bar section.player div.player-slider:before{
 	content:"0:25";
-	font-size: .5em;
+	font-size: .6em;
 	color:white;
 	margin-right:10px;
 	bottom:0;
@@ -335,13 +346,29 @@ footer#bottom-bar section.player div.player-slider:before{
 
 footer#bottom-bar section.player div.player-slider:after{
 	content:"4:35";
-	font-size: .5em;
+	font-size: .6em;
 	color:white;
 	margin-left:10px;
 	bottom:0;
 	position:absolute;
 	left:100%;
 }
+
+
+footer#bottom-bar .player-slider:hover span{
+	background-color:rgb(96, 250, 49);
+}
+
+footer#bottom-bar .player-slider:hover span::before{
+	content: "\f111";
+	color:white;
+	position:absolute;
+	bottom:-5px;
+	right:0;
+	font-family: "Font Awesome 5 Free";
+	font-weight: bold;
+}
+
 
 footer#bottom-bar section.settings{
 	align-items: center;
@@ -358,7 +385,7 @@ footer#bottom-bar  div.player-slider span{
 	border-radius:20px;
 	bottom:0;
 	left:0;
-	height:2px;
+	height:3px;
 	width:20%;
 	background-color:rgb(194, 194, 194);
 }
@@ -440,5 +467,4 @@ footer#bottom-bar  div.player-slider span{
 		padding: 0 0 .5em 0;
 	}
 	
-
 }
