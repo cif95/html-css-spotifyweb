@@ -224,12 +224,13 @@ section#main-content .categories .row .card{
 
 /* bottom bar */
 
+
 footer#bottom-bar{
 	height:7vh;
 	min-height:50px;
 	position:fixed;
 	bottom:0;
-	font-size:.7em;
+	font-size:.6em;
 	left:0;
 	right:0;
 	align-items: center;
@@ -237,55 +238,93 @@ footer#bottom-bar{
 	background-color: rgb(40, 40, 40);
 }
 
+footer#bottom-bar img{
+	width:20%;
+}
+
 footer#bottom-bar section.album{
-	padding-left:.5em;
+	align-items: center;
+	flex-basis:160px;
+	justify-content: space-evenly;
 }
 
-footer#bottom-bar section.album figure{
-	height:7vh;
-	padding:.5em 0;
-}
-
-
-footer#bottom-bar section.album i{
-	padding-top:.5em;
-}
-
-footer#bottom-bar section.album figure img{
-	height:90%;
-	padding-right:.5em;
-}
-
-footer#bottom-bar section.album figure>figcaption .album-title{
-	padding-right:5em;
-}
-
-footer#bottom-bar section.album figure>figcaption .song-name{
+footer#bottom-bar section.album .song-name{
 	font-size:.6em;
 } 
 
+footer#bottom-bar section.album .interactions i:first-child{
+	margin:0 8px;
+}
+
 footer#bottom-bar section.player div.icons{
-	text-align:center;
-	font-size:.7em;
+	justify-content:center;
+	align-items: center;
+	/* font-size:.8em; */
+
 }
 
-footer#bottom-bar section.player div.icons i{
-	margin-right:1em;
+footer#bottom-bar section.player i,
+footer#bottom-bar section.settings i{
+	margin-right:15px;
 }
 
-footer#bottom-bar section.player div.song-slider{
-	width:250px;
-	margin-top:.5em;
+footer#bottom-bar div.player-slider{
+	width:25vw;
+	margin-top:.7em;
+	height:3px;
+	background-color:rgb(99, 99, 99);
+	border-radius:20px;
+	position:relative;
+} 
+
+footer#bottom-bar  div.player-slider span{
+	position:absolute;
+	border-radius:20px;
+	bottom:0;
+	left:0;
 	height:2px;
-	background-color:rgb(126, 126, 130);
-	border-radius: 20px;
+	width:5em;
+	background-color:rgb(194, 194, 194);
 }
 
+footer#bottom-bar section.player div.player-slider:before{
+	content:"0:25";
+	font-size: .5em;
+	color:white;
+	margin-right:10px;
+	bottom:0;
+	position:absolute;
+	right:100%;
+}
 
+footer#bottom-bar section.player div.player-slider:after{
+	content:"4:35";
+	font-size: .5em;
+	color:white;
+	margin-left:10px;
+	bottom:0;
+	position:absolute;
+	left:100%;
+}
 
+footer#bottom-bar section.settings{
+	align-items: center;
+	justify-content: center;
+}
 
+footer#bottom-bar section.settings div.player-slider{
+	width:70px;
+	margin:0 .5em 0 0;
+}
 
-
-
+footer#bottom-bar  div.player-slider span{
+	position:absolute;
+	border-radius:20px;
+	bottom:0;
+	left:0;
+	height:2px;
+	width:20%;
+	background-color:rgb(194, 194, 194);
+}
 
 
