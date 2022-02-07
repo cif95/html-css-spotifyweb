@@ -34,15 +34,17 @@ ul li{
 /* left nav bar */
 
 nav#left-navbar{
-	padding:.7em .7em 0 .7em;
+	padding:0 .7em 0 .7em;
+	font-size:.6em;
 	width:160px;
+	line-height:2.7em;
 	flex-shrink:0;
 	justify-content: space-between;
 	background-color: black;
 }
 
 nav#left-navbar img:not(#main-logo img){
-	width:10%;
+	width:12%;
 }
 
 nav#left-navbar img,
@@ -53,43 +55,35 @@ nav#left-navbar i.fas{
 
 /* upper left nav bar */
 
+
 nav#left-navbar #upper-nav div#main-logo{
-	width:50%;
-	padding-bottom:.5em;
+	height:50px;
+	padding-top:.5em;
 }
 
-nav#left-navbar #upper-nav .nav-icon, 
-nav#left-navbar #upper-nav .playlist>h2{
-	padding:.3em 0;
-}
-
-nav#left-navbar #upper-nav .nav-icon span{
-	font-size:.6em;
+nav#left-navbar #upper-nav div#main-logo img{
+	width:70%;
 }
 
 nav#left-navbar #upper-nav .playlist>h2{
-	padding:1em 0;
+	padding:.5em 0;
+	font-size:1em;
 }
 
-nav#left-navbar #upper-nav .playlist span,
-nav#left-navbar #upper-nav .playlist ul li,
-nav#left-navbar #upper-nav .playlist>h2{
-	font-size:.6em;
+nav#left-navbar #upper-nav .playlist ul{
+	height:40vh;
+	overflow-y: auto;
 }
 
-nav#left-navbar #upper-nav .playlist ul li{
-	padding:.7em 0;
-}
+
 
 /* lower left nav bar */
 
 nav#left-navbar #lower-nav{
-	font-size:.6em;
-	padding-bottom:.5em;
+	padding-bottom:1em;
 }
 
 nav#left-navbar #lower-nav .nav-icon{
-	padding-bottom:1em;
 	border-bottom:1px solid grey;
 }
 
@@ -100,7 +94,6 @@ nav#left-navbar #lower-nav .user{
 nav#left-navbar #lower-nav .user img{
 	border-radius: 50%;
 	background-color: rgb(128, 128, 128);
-
 }
 
 
@@ -113,7 +106,6 @@ section#main-content{
 
 
 section#main-content{
-	flex-grow:1;
 	overflow-y: auto;
 	background-color:rgb(20, 25, 34);
 }
@@ -128,15 +120,18 @@ section#main-content img{
 
 section#main-content div#add{
 	text-align:right;
-	padding:.8em .2em .8em 0;
+	height:50px;
+	position:sticky;
+	z-index: 1;
+	padding-right:0.2em;
+	line-height: 50px;
 	background-color: rgba(0, 0, 0, 0.4);
 }
 
-section#main-content div#add button.upgrade{
+section#main-content div#add .btn-upgrade{
 	font-size:.6em;
 	color:white;
-	min-width:160px;
-	padding:.8em 2.7em;
+	padding:.7em 1.7em;
 	border-radius: 1.5em;
 	border:1px solid white;
 	background-color: rgba(0, 0, 0, 0.4);
@@ -181,6 +176,7 @@ section#main-content .categories .category-title{
 
 section#main-content .categories .row{
 	gap:1em;
+	align-items:flex-start;
 }
 
 section#main-content .categories .row .album{
@@ -201,6 +197,11 @@ section#main-content .categories .row .album{
 
 footer#bottom-bar{
 	height:7vh;
+	min-height:50px;
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
 	align-items: center;
 	justify-content:space-between;
 	background-color: rgb(40, 40, 40);
