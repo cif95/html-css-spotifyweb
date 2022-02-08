@@ -83,7 +83,7 @@ nav#left-navbar #upper-nav div.active::before{
 	position:absolute;
 	width:2px;
 	height:25px;
-	background:rgb(89, 184, 12);
+	background:#1ED760;
 	left:0;
 }
 
@@ -182,7 +182,7 @@ section#main-content div#add .btn-upgrade{
 	color:white;
 	padding:1em 1.7em;
 	border-radius: 3em;
-	border:1px solid white;
+	border:.2em solid grey;
 	background-color: rgba(0, 0, 0, 0.7);
 	position:absolute;
 	top:0;
@@ -209,7 +209,7 @@ section#main-content div#add .btn-upgrade:hover{
 }
 
 section#main-content div#add .btn-upgrade:active{
-	color:rgb(148, 245, 38);
+	color:#1ED760;
 }
 
 div#add button.upgrade, 
@@ -253,7 +253,7 @@ section#main-content nav#center-navbar ul li.active::before{
 	position:absolute;
 	width:25px;
 	height:2px;
-	background:rgb(89, 184, 12);
+	background:#1ED760;
 	bottom:5px;
 	left:0;
 	right:0;
@@ -294,6 +294,11 @@ section#main-content .categories .row.artists .card
 section#main-content .categories .row .card{
 	width:calc(90% / 6);
 	text-align: center;
+	margin-right:2%;
+}
+
+section#main-content .categories .row .card:hover{
+	transform: scale(1.05);
 }
 
 section#main-content .categories .row.artists .card img{
@@ -321,7 +326,7 @@ section#main-content .categories .row .card div.layer:hover i{
 
 section#main-content .categories .row .card div.layer i {
 	position:absolute;
-	color:white;
+	color:#1ED760;
 	cursor: pointer;
 	top:50%;
 	left:50%;
