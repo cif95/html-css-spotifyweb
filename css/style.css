@@ -264,6 +264,21 @@ section#main-content .categories .row .card div.layer{
 }
 
 
+section#main-content .categories .row .card div.layer:hover i{
+	display: block;
+	}
+
+
+	section#main-content .categories .row .card div.layer i {
+	position:absolute;
+	color:white;
+	cursor: pointer;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	display:none;
+}
+
 section#main-content .categories .row .card:hover.card div.layer:before{
 	content: "";
 	top: 0;
@@ -271,6 +286,17 @@ section#main-content .categories .row .card:hover.card div.layer:before{
 	bottom:2%;
 	left: 0;
 	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+}
+
+section#main-content .categories .row.artists .card:hover.card div.layer:before{
+	content: "";
+	top: 0;
+	right: 0;
+	bottom:2%;
+	left: 0;
+	position: absolute;
+	border-radius: 50%;
 	background-color: rgba(0,0,0,0.5);
 }
 
