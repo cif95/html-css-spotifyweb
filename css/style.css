@@ -250,13 +250,23 @@ section#main-content .categories .row.artists .card
 	margin-right:2%;
 }
 
-section#main-content .categories .row.artists .card img{
-	border-radius: 50%;
-}
 
 section#main-content .categories .row .card{
 	width:calc(90% / 6);
 	text-align: center;
+}
+
+section#main-content .categories .row.artists .card img{
+	border-radius: 50%;
+}
+
+
+#main-content .categories .card figcaption>h4{
+	font-size:.7em;
+}
+
+#main-content .categories .card figcaption>span{
+	font-size:.5em;
 }
 
 section#main-content .categories .row .card div.layer{
@@ -301,14 +311,6 @@ section#main-content .categories .row.artists .card:hover.card div.layer:before{
 }
 
 
-#main-content .categories .card figcaption>h4{
-	font-size:.7em;
-}
-
-#main-content .categories .card figcaption>span{
-	font-size:.5em;
-}
-
 
 /* bottom bar */
 
@@ -330,12 +332,21 @@ footer#bottom-bar img{
 	width:20%;
 }
 
+footer#bottom-bar i.far.fa-play-circle.fa-2x:hover{
+	font-size:2.2em;
+}
+
 footer#bottom-bar i:hover{
 	color:white;
 }
 
+
+/* footer section album */
+
+
 footer#bottom-bar section.album{
 	align-items: center;
+	flex-shrink: 0;
 	flex-basis:160px;
 	justify-content: space-evenly;
 }
@@ -352,14 +363,12 @@ footer#bottom-bar section.album .interactions i:first-child{
 	margin:0 8px;
 }
 
+/* footer section player */
+
 footer#bottom-bar section.player div.icons{
 	justify-content:center;
 	align-items: center;
 
-}
-
-footer#bottom-bar i.far.fa-play-circle.fa-2x:hover{
-	font-size:2.2em;
 }
 
 footer#bottom-bar section.player i,
@@ -397,6 +406,16 @@ footer#bottom-bar section.player div.player-slider:after{
 	left:100%;
 }
 
+footer#bottom-bar  div.player-slider span{
+	position:absolute;
+	border-radius:20px;
+	bottom:0;
+	left:0;
+	height:3px;
+	width:20%;
+	background-color:rgb(194, 194, 194);
+}
+
 
 footer#bottom-bar .player-slider:hover span{
 	background-color:rgb(96, 250, 49);
@@ -412,6 +431,7 @@ footer#bottom-bar .player-slider:hover span::before{
 	font-weight: bold;
 }
 
+/* footer section settings */
 
 footer#bottom-bar section.settings{
 	align-items: center;
@@ -421,16 +441,6 @@ footer#bottom-bar section.settings{
 footer#bottom-bar section.settings div.player-slider{
 	width:70px;
 	margin:0 .5em 0 0;
-}
-
-footer#bottom-bar  div.player-slider span{
-	position:absolute;
-	border-radius:20px;
-	bottom:0;
-	left:0;
-	height:3px;
-	width:20%;
-	background-color:rgb(194, 194, 194);
 }
 
 
@@ -489,8 +499,12 @@ footer#bottom-bar  div.player-slider span{
 		width:40px;
 	}
 
+	nav#left-navbar img {
+		margin: 7px;
+	}
+
 	nav#left-navbar img:not(#main-logo img){
-		width:40%;
+		width:50%;
 	}
 
 	nav#left-navbar #upper-nav div.active::before {
@@ -501,8 +515,8 @@ footer#bottom-bar  div.player-slider span{
 	nav#left-navbar #upper-nav div#main-logo::after{
 		content: url(../img/logo-small.svg);
 		display: inline-block;
-		width:70%;
-		margin-left:.4em;
+		width: 65%;
+		margin-left:.5em;
 	}
 
 	nav#left-navbar #lower-nav .nav-icon {
