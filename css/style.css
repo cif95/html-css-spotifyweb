@@ -212,7 +212,7 @@ section#main-content div#add .btn-upgrade:active{
 	color:#1ED760;
 }
 
-div#add button.upgrade, 
+div#add .btn-upgrade, 
 nav#center-navbar ul.row, 
 main nav#left-navbar .playlist>h2{
 	text-transform: uppercase;
@@ -242,6 +242,10 @@ section#main-content nav#center-navbar ul.row li{
 
 section#main-content nav#center-navbar ul li a:hover{
 	color:white;
+}
+
+section#main-content nav#center-navbar ul li a:active{
+	color:#1ED760;
 }
 
 section#main-content nav#center-navbar ul li.active{
@@ -371,6 +375,10 @@ footer#player-bar i.far.fa-play-circle.fa-2x:hover{
 
 footer#player-bar i:hover{
 	color:white;
+}
+
+footer#player-bar i:active{
+	transform:scale(1.2);
 }
 
 
