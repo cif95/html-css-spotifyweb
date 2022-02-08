@@ -131,7 +131,7 @@ nav#left-navbar #lower-nav .user img{
 
 nav#left-navbar, 
 section#main-content{
-	height:93vh;
+	height:calc(100vh - 50px);
 }
 
 /* main content section */
@@ -279,7 +279,7 @@ section#main-content .categories .row .card div.layer:hover i{
 	}
 
 
-	section#main-content .categories .row .card div.layer i {
+section#main-content .categories .row .card div.layer i {
 	position:absolute;
 	color:white;
 	cursor: pointer;
@@ -316,8 +316,7 @@ section#main-content .categories .row.artists .card:hover.card div.layer:before{
 
 
 footer#bottom-bar{
-	height:7vh;
-	min-height:50px;
+	height:50px;
 	position:fixed;
 	bottom:0;
 	font-size:.7em;
