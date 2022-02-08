@@ -169,27 +169,47 @@ section#main-content img{
 
 
 section#main-content div#add{
-	text-align:right;
 	height:50px;
 	top:0;
 	position:sticky;
 	z-index: 1;
 	padding-right:0.2em;
-	line-height: 50px;
 	background-color: rgba(0, 0, 0, 0.4);
 }
 
 section#main-content div#add .btn-upgrade{
 	font-size:.6em;
 	color:white;
-	padding:.7em 1.7em;
-	border-radius: 1.5em;
+	padding:1em 1.7em;
+	border-radius: 3em;
 	border:1px solid white;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.7);
+	position:absolute;
+	top:0;
+	right:2%;
+	animation: bounce 1s;
+	animation-direction: alternate;
+	filter:drop-shadow(0 .2rem .3rem grey);
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes bounce{
+	from{
+		transform:translate3d(0, 0, 0);
+	}
+	to{
+		transform:translate3d(0, 25px, 0px);
+	}
 }
 
 section#main-content div#add .btn-upgrade:hover{
 	font-size:.65em;
+	
+}
+
+section#main-content div#add .btn-upgrade:active{
+	color:rgb(148, 245, 38);
 }
 
 div#add button.upgrade, 
@@ -197,6 +217,9 @@ nav#center-navbar ul.row,
 main nav#left-navbar .playlist>h2{
 	text-transform: uppercase;
 }
+
+
+
 
 
 /* main content section navbar */
