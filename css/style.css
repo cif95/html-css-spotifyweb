@@ -413,7 +413,7 @@ footer#player-bar section.player-controls{
 }
 
 footer#player-bar section.player-controls div.icons{
-	margin:1% 0;
+	margin:0.8% 0;
 	font-size:0.85em;
 	justify-content:center;
 	align-items: center;
@@ -430,8 +430,8 @@ footer#player-bar section.player-controls .row{
 }
 
 footer#player-bar .player-slider{
-	width:25vw;
-	height:.25em;
+	width:22vw;
+	height:3px;
 	background-color:rgb(99, 99, 99);
 	border-radius:20px;
 	position:relative;
@@ -440,6 +440,7 @@ footer#player-bar .player-slider{
 footer#player-bar  .player-controls .current-time,
 footer#player-bar  .player-controls .total-time{
 	margin:0 2%;
+	font-size:.6em;
 }
 
 footer#player-bar  .player-slider .played-time{
@@ -447,7 +448,7 @@ footer#player-bar  .player-slider .played-time{
 	border-radius:20px;
 	bottom:0;
 	left:0;
-	height:.25em;
+	height:3px;
 	width:20%;
 	background-color:rgb(194, 194, 194);
 }
@@ -465,18 +466,21 @@ footer#player-bar .player-slider:hover .played-time::before{
 	right:0;
 	font-family: "Font Awesome 5 Free";
 	font-weight: bold;
-} */
+} 
+
+
 
 /* footer section player audio */
 
 
 section.player-audio.row.white-tx{
 	flex-basis:20%;
+	justify-content: end;
 	align-items:center;
 }
 
 footer#player-bar section.player-audio div.player-slider{
-	width:10vw;
+	width:7vw;
 	margin:0 .5em 0 0;
 }
 
