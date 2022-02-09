@@ -288,13 +288,6 @@ section#main-content .categories .row.recently-plyd{
 	justify-content: space-between;
 }
 
-section#main-content .categories .row.created-for .card,
-section#main-content .categories .row.artists .card
-{
-	margin-right:2%;
-}
-
-
 section#main-content .categories .row .card{
 	width:calc(90% / 6);
 	text-align: center;
@@ -342,7 +335,7 @@ section#main-content .categories .row .card:hover.card div.layer:before{
 	content: "";
 	top: 0;
 	right: 0;
-	bottom:2%;
+	bottom:2.7%;
 	left: 0;
 	position: absolute;
 	background-color: rgba(0,0,0,0.5);
@@ -353,7 +346,7 @@ section#main-content .categories .row.artists .card:hover.card div.layer:before{
 }
 
 
-/* bottom bar */
+/* footer player bar */
 
 
 footer#player-bar{
@@ -383,7 +376,7 @@ footer#player-bar i:active{
 }
 
 
-/* footer section album */
+/* footer section player album */
 
 
 footer#player-bar section.player-album{
@@ -404,7 +397,7 @@ footer#player-bar section.player-album .interactions i:first-child{
 	margin:0 8px;
 }
 
-/* footer section player */
+/* footer section player controls*/
 
 footer#player-bar section.player-controls{
 	flex-basis:40%;
@@ -481,6 +474,11 @@ footer#player-bar section.player-audio div.player-slider{
 	width:7vw;
 	margin:0 .5em 0 0;
 }
+
+
+
+/* MEDIA QUERIES */
+
 
 
 
@@ -582,6 +580,15 @@ footer#player-bar section.player-audio div.player-slider{
 
 	footer#player-bar {
 		font-size: .55em;
-		min-width:280px;
+		min-width:250px;
 	}
+
+	footer#player-bar section.player-album .interactions{
+		margin-left: 10px;
+	}
+
+	footer#player-bar section.player-controls i, footer#player-bar section.player-audio i {
+		margin-right: 5%;
+	}
+	
 }
