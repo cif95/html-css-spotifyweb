@@ -366,7 +366,8 @@ footer#player-bar{
 }
 
 footer#player-bar img{
-	width:20%;
+	width:3em;
+	margin-left:2%;
 }
 
 footer#player-bar i.far.fa-play-circle.fa-2x:hover{
@@ -388,8 +389,8 @@ footer#player-bar i:active{
 footer#player-bar section.player-album{
 	align-items: center;
 	flex-shrink: 0;
-	flex-basis:160px;
-	justify-content: space-evenly;
+	flex-basis:20%;
+	gap:5%;
 }
 
 footer#player-bar section.player-album .song-name{
@@ -406,62 +407,57 @@ footer#player-bar section.player-album .interactions i:first-child{
 
 /* footer section player */
 
+footer#player-bar section.player-controls{
+	flex-basis:40%;
+	text-align: center;
+}
+
 footer#player-bar section.player-controls div.icons{
+	margin:1% 0;
+	font-size:0.85em;
 	justify-content:center;
 	align-items: center;
 }
 
 footer#player-bar section.player-controls i,
 footer#player-bar section.player-audio i{
-	margin-right:15px;
+	margin-right:3%;
 }
 
-footer#player-bar div.player-slider{
+footer#player-bar section.player-controls .row{
+	justify-content:center;
+	align-items:center;
+}
+
+footer#player-bar .player-slider{
 	width:25vw;
-	margin:.7em 0;
-	height:3px;
+	height:.25em;
 	background-color:rgb(99, 99, 99);
 	border-radius:20px;
 	position:relative;
 } 
 
-
-footer#player-bar section.player-controls div.player-slider:before{
-	content:"0:25";
-	font-size: .6em;
-	color:white;
-	margin-right:10px;
-	bottom:0;
-	position:absolute;
-	right:100%;
+footer#player-bar  .player-controls .current-time,
+footer#player-bar  .player-controls .total-time{
+	margin:0 2%;
 }
 
-footer#player-bar section.player-controls div.player-slider:after{
-	content:"4:35";
-	font-size: .6em;
-	color:white;
-	margin-left:10px;
-	bottom:0;
-	position:absolute;
-	left:100%;
-}
-
-footer#player-bar  div.player-slider span{
+footer#player-bar  .player-slider .played-time{
 	position:absolute;
 	border-radius:20px;
 	bottom:0;
 	left:0;
-	height:3px;
+	height:.25em;
 	width:20%;
 	background-color:rgb(194, 194, 194);
 }
 
 
-footer#player-bar .player-slider:hover span{
+footer#player-bar .player-slider:hover .played-time{
 	background-color:rgb(96, 250, 49);
 }
 
-footer#player-bar .player-slider:hover span::before{
+footer#player-bar .player-slider:hover .played-time::before{
 	content: "\f111";
 	color:white;
 	position:absolute;
@@ -469,17 +465,18 @@ footer#player-bar .player-slider:hover span::before{
 	right:0;
 	font-family: "Font Awesome 5 Free";
 	font-weight: bold;
-}
+} */
 
-/* footer section settings */
+/* footer section player audio */
 
-footer#player-bar section.player-audio{
-	align-items: center;
-	justify-content: center;
+
+section.player-audio.row.white-tx{
+	flex-basis:20%;
+	align-items:center;
 }
 
 footer#player-bar section.player-audio div.player-slider{
-	width:70px;
+	width:10vw;
 	margin:0 .5em 0 0;
 }
 
@@ -516,12 +513,6 @@ footer#player-bar section.player-audio div.player-slider{
 		display: block;
 		margin:0;
 	}
-
-	footer#player-bar div.player-slider{
-		width:80px;
-		margin:1em auto;
-	}
-
 }
 
 
@@ -573,5 +564,6 @@ footer#player-bar section.player-audio div.player-slider{
 	
 	footer#player-bar {
 		font-size: .6em;
+		min-width:280px;
 	}
 }
