@@ -490,7 +490,7 @@ footer#player-bar section.player-audio div.player-slider{
 		flex-wrap:wrap;
 	}
 	section#main-content .categories .row .card{
-		width:calc(90% / 4);
+		width:calc(92% / 4);
 		margin-right:2%;
 	}
 
@@ -508,7 +508,7 @@ footer#player-bar section.player-audio div.player-slider{
 	}
 
 	section#main-content .categories .row .card{
-		width:45%;
+		width:48%;
 	}
 
 	footer#player-bar section.player-album .interactions i:first-child{
