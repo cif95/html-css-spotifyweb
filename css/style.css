@@ -187,19 +187,19 @@ section#main-content div#add .btn-upgrade{
 	position:absolute;
 	top:0;
 	right:2%;
-	animation: bounce 1s;
+	animation: bounce .8s;
 	animation-direction: alternate;
-	filter:drop-shadow(0 .2rem .3rem grey);
+	filter:drop-shadow(0 .2rem .2rem grey);
 	animation-iteration-count: infinite;
 }
 
 
 @keyframes bounce{
 	from{
-		transform:translate3d(0, 0, 0);
+		transform:translate3d(0, 2px, 0);
 	}
 	to{
-		transform:translate3d(0, 25px, 0px);
+		transform:translate3d(0, 10px, 0px);
 	}
 }
 
@@ -508,7 +508,7 @@ footer#player-bar section.player-audio div.player-slider{
 	}
 
 	section#main-content .categories .row .card{
-		width:calc(90% / 2);
+		width:45%;
 	}
 
 	footer#player-bar section.player-album .interactions i:first-child{
