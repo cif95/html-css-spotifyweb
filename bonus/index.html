@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+	<!-- Font-Awesome cdn -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<!-- css stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- fav icon -->
+	<link rel="icon" href="img/favicon.ico" />
+	<title>Spotify Web</title>
+</head>
+<body>
+	<main>
+		<div class="row">
+			<!-- left navbar -->
+			<nav id="left-navbar" class="col">
+				<section id="upper-nav">
+					<div id="main-logo">
+						<img src="img/logo.svg" alt="logo spotify">
+					</div>
+					<div class="nav-element">
+						<img src="img/home.svg" alt="icona home">
+						<span class="white-tx">Home</span>
+					</div>
+					<div class="nav-element">
+						<img src="img/search.svg" alt="icona cerca">
+						<span>Cerca</span>
+					</div>
+					<div class="nav-element">
+						<img src="img/libreria.svg" alt="icona libreria">
+						<span>La tua libreria</span>
+					</div>
+					<div class="playlist">
+						<h2 class="white-tx">Playlist</h2>
+						<i class="fas fa-plus-square fa-3x"></i>
+						<span>Crea playlist</span>
+						<ul>
+							<li>Workout</li>
+							<li>Good Vibes</li>
+							<li>Jazz chill</li>
+						</ul>
+					</div>
+				</section>
+				<section id="lower-nav">
+					<div class="nav-element">
+						<img src="img/download.svg" alt="icona download">
+						<span>Installa app</span>
+					</div>
+					<div class="user">
+						<img src="img/profile.svg" alt="icona profilo">
+						<span class="white-tx">Viviana Cifarelli</span>
+					</div>
+				</section>
+			</nav>
+			<!-- main section -->
+			<section id="main-content">
+				<!-- top add upgrade-->
+				<div id="add">
+					<a href="#" class="btn-upgrade">Effettua l'upgrade</a>
+				</div>
+				<!-- main section navbar -->
+				<nav id="center-navbar" class="row">
+					<ul class="row">
+						<li class="active"><a href="#">in evidenza</a></li>
+						<li><a href="#">podcast</a></li>
+						<li><a href="#">classifiche</a></li>
+						<li><a href="#">generi e mood</a></li>
+						<li><a href="#">nuove uscite</a></li>
+						<li><a href="#">scopri</a></li>
+					</ul>
+				</nav>
+				<!-- categories and albums -->
+				<div class="categories">
+					<h2 class="category-title white-tx">Recently played</h2>
+					<div class="row recently-plyd">
+							<figure class="card">
+								<div class="layer">
+									<i class="far fa-play-circle fa-3x"></i>
+									<img src="img/chetbaker.jpg" alt="chet baker album picture">
+								</div>
+								<figcaption>
+									<h4 class="white-tx">Chet baker with fifty italian strings
+									</h4>
+									<span>album <i class="fas fa-circle fa-xs"></i> chet baker</span>
+								</figcaption>
+							</figure>
+							<figure class="card">
+								<div class="layer">
+									<i class="far fa-play-circle fa-3x"></i>
+									<img src="img/xx.jpg" alt="the xx album picture">
+								</div>
+								<figcaption>
+									<h4 class="white-tx">xx</h4>
+									<span>album <i class="fas fa-circle fa-xs"></i> the xx</span>
+								</figcaption>
+							</figure>
+							<figure class="card">
+								<div class="layer">
+									<i class="far fa-play-circle fa-3x"></i>
+									<img src="img/billwithers.jpg" alt="bill withers album picture">
+								</div>
+								<figcaption>
+									<h4 class="white-tx">just as i am</h4>
+									<span>album <i class="fas fa-circle fa-xs"></i> bill withers</span>
+								</figcaption>
+							</figure>
+							<figure class="card">
+								<div class="layer">
+									<i class="far fa-play-circle fa-3x"></i>
+									<img src="img/split.jpeg" alt="split album picture">
+								</div>
+								<figcaption>
+									<h4 class="white-tx">Split</h4>
+									<span>subtitle</span>
+								</figcaption>
+							</figure>
+							<figure class="card">
+								<div class="layer">
+									<i class="far fa-play-circle fa-3x"></i>
+									<img src="img/cure.jpeg" alt="a cure for wellness album picture">
+								</div>
+								<figcaption>
+									<h4 class="white-tx">A cure for wellness</h4>
+									<span>subtitle</span>
+								</figcaption>
+							</figure>
+					</div>
+					<!-- created for you category -->
+					<h2 class="category-title white-tx">Creato per John Doe</h2>
+					<p>Più ascolti, più saranno accurati i suggerimenti</p>
+					<div class="row created-for">
+							<figure class="card">
+								<div class="layer">
+									<i class="far fa-play-circle fa-3x"></i>
+									<img src="img//radar.jpeg" alt="radar album picture">
+								</div>
+								<figcaption>
+									<h4 class="white-tx">Release radar</h4>
+								</figcaption>
+							</figure>
+							<figure class="card">
+								<div class="layer">
+									<i class="far fa-play-circle fa-3x"></i>
+									<img src="img/mixdaily.jpeg" alt="mixdaily album picture">
+								</div>
+								<figcaption>
+									<h4 class="white-tx">Daily mix</h4>
+									<span>subtitle</span>
+								</figcaption>
+							</figure>
+					</div>
+					<!-- most popular artists category-->
+					<h2 class="category-title white-tx">Artisti più popolari</h2>
+					<p>Più ascolti, più saranno accurati i suggerimenti</p>
+					<div class="row artists">
+							<figure class="card">
+								<div class="layer">
+									<i class="far fa-play-circle fa-3x"></i>
+									<img src="img/einaudi.jpeg" alt="einaudi picture">
+								</div>
+								<figcaption>
+									<h4 class="white-tx">Einaudi</h4>
+								</figcaption>
+							</figure>
+							<figure class="card">
+								<div class="layer">
+									<i class="far fa-play-circle fa-3x"></i>
+									<img src="img/youg.jpeg" alt="lana del rey album picture">
+								</div>
+								<figcaption>
+									<h4 class="white-tx">Lana Del Rey</h4>
+								</figcaption>
+							</figure>
+					</div>
+					<!-- fav mix category-->
+					<h2 class="category-title white-tx">I tuoi mix preferiti</h2>
+					<div class="row">
+							<figure class="card">
+								<div class="layer">
+									<i class="far fa-play-circle fa-3x"></i>
+									<img src="img/chetfaker.jpg" alt="chet faker album picture">
+								</div>
+								<figcaption>
+									<h4 class="white-tx">Chet Faker</h4>
+								</figcaption>
+							</figure>
+							<figure class="card">
+								<div class="layer">
+									<i class="far fa-play-circle fa-3x"></i>
+									<img src="img/gilberto.jpg" alt="joao gilberto album picture">
+								</div>
+								<figcaption>
+									<h4 class="white-tx">Joao Gilberto</h4>
+								</figcaption>
+							</figure>
+							<figure class="card">
+								<div class="layer">
+									<i class="far fa-play-circle fa-3x"></i>
+									<img src="img/zimmer.jpg" alt="album picture">
+								</div>
+								<figcaption>
+									<h4 class="white-tx">Hans Zimmer</h4>
+								</figcaption>
+							</figure>
+							<figure class="card">
+								<div class="layer">
+									<i class="far fa-play-circle fa-3x"></i>
+									<img src="img/lauryn.jpg" alt="album picture">
+								</div>
+								<figcaption>
+									<h4 class="white-tx">Lauryn Hill</h4>
+								</figcaption>
+							</figure>
+							<figure class="card">
+								<div class="layer">
+									<i class="far fa-play-circle fa-3x"></i>
+									<img src="img/chetbaker.jpg" alt="chet baker album picture">
+								</div>
+								<figcaption>
+									<h4 class="white-tx">Chet baker with fifty italian strings
+									</h4>
+									<span>album <i class="fas fa-circle fa-xs"></i> chet baker</span>
+								</figcaption>
+							</figure>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+	<!-- bottom player bar -->
+	<footer id="player-bar" class="row">
+		<section class="player-album row">
+			<img src="img/sinister.jpeg" alt="album picture">
+			<div class="album-info">
+				<h5 class="album-title white-tx">Sinister</h5>
+				<p class="song-name">Brano nome</p>
+			</div>
+			<div class="interactions">
+				<i class="far fa-heart"></i>
+			</div>
+		</section>
+		<section class="player-controls col">
+			<div class="icons white-tx row">
+				<i class="fas fa-random"></i>
+				<i class="fas fa-step-backward"></i>
+				<i class="far fa-play-circle fa-3x"></i>
+				<i class="fas fa-fas fa-step-forward"></i>
+				<i class="fas fa-redo-alt"></i>
+			</div>
+			<div class="row">
+				<div class="current-time white-tx">0:25</div>
+				<div class="player-slider">
+					<div class="played-time"></div>
+				</div>
+				<div class="total-time white-tx">4:35</div>
+			</div>
+		</section>
+		<section class="player-audio row white-tx">
+				<i class="fas fa-list"></i>
+				<i class="fas fa-desktop"></i>
+				<i class="fas fa-volume-up"></i>
+				<div class="player-slider">
+					<div class="played-time"></div>
+				</div>
+		</section>
+	</footer>
+</body>
+</html>
