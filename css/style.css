@@ -118,7 +118,7 @@ nav#left-navbar #upper-nav .playlist ul{
 
 nav#left-navbar #lower-nav{
 	position: relative;
-	padding: 0 15px 1em 15px;
+	padding: 2px 10px;
 	background: black;
 }
 
@@ -388,7 +388,6 @@ footer#player-bar i:active{
 
 footer#player-bar section.player-album{
 	align-items: center;
-	flex-shrink: 0;
 	flex-basis:20%;
 	gap:5%;
 }
@@ -409,7 +408,6 @@ footer#player-bar section.player-album .interactions i:first-child{
 
 footer#player-bar section.player-controls{
 	flex-basis:40%;
-	text-align: center;
 }
 
 footer#player-bar section.player-controls div.icons{
@@ -542,10 +540,6 @@ footer#player-bar section.player-audio div.player-slider{
 		width:50%;
 	}
 
-	nav#left-navbar #lower-nav .user img {
-		width: 45%;
-	}
-
 	nav#left-navbar #upper-nav div.active::before {
 		width:0;
 		height:0;
@@ -558,16 +552,21 @@ footer#player-bar section.player-audio div.player-slider{
 		margin-left:.7em;
 	}
 
-	nav#left-navbar #lower-nav .nav-element {
-		border-bottom:none;
-	}
-
 	nav#left-navbar #lower-nav {
 		padding: 0 0 .5em .3em;
 	}
 	
+
+	nav#left-navbar #lower-nav .user img {
+		width: 45%;
+	}
+
+	nav#left-navbar #lower-nav .nav-element {
+		border-bottom:none;
+	}
+
 	footer#player-bar {
-		font-size: .6em;
+		font-size: .55em;
 		min-width:280px;
 	}
 }
