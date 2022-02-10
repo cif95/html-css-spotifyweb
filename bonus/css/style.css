@@ -10,6 +10,7 @@ body{
 
 main,
 footer{
+	overflow:hidden;
 	color:rgb(126, 126, 130);
 }
 
@@ -109,9 +110,6 @@ nav#left-navbar #upper-nav .playlist>h2{
 
 nav#left-navbar #upper-nav .playlist ul{
 	height:40vh;
-	position:absolute;
-	right:0;
-	left:10px;
 	overflow-y: auto;
 }
 
@@ -120,7 +118,6 @@ nav#left-navbar #upper-nav .playlist ul{
 /* lower left nav bar */
 
 nav#left-navbar #lower-nav{
-	position: relative;
 	padding: .5em 1em;
 }
 
@@ -358,7 +355,7 @@ section#main-content .categories .row .card:hover.card div.layer:before{
 	content: "";
 	top: 0;
 	right: 0;
-	bottom:2.7%;
+	bottom: 4px;
 	left: 0;
 	position: absolute;
 	background-color: rgba(0,0,0,0.5);
@@ -585,6 +582,10 @@ footer#player-bar section.player-audio div.player-slider{
 
 	nav#left-navbar #upper-nav img:not(#main-logo img) {
 		margin-left:8px;
+	}
+
+	nav#left-navbar #upper-nav div:nth-child(2) {
+		padding-top: 0;
 	}
 
 	nav#left-navbar #lower-nav {

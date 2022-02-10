@@ -10,6 +10,7 @@ body{
 
 main,
 footer{
+	overflow:hidden;
 	color:rgb(126, 126, 130);
 }
 
@@ -106,9 +107,6 @@ nav#left-navbar #upper-nav .playlist>h2{
 
 nav#left-navbar #upper-nav .playlist ul{
 	height:40vh;
-	position:absolute;
-	right:0;
-	left:10px;
 	overflow-y: auto;
 }
 
@@ -117,7 +115,6 @@ nav#left-navbar #upper-nav .playlist ul{
 /* lower left nav bar */
 
 nav#left-navbar #lower-nav{
-	position: relative;
 	padding: 2px 10px;
 	background: black;
 }
@@ -335,7 +332,7 @@ section#main-content .categories .row .card:hover.card div.layer:before{
 	content: "";
 	top: 0;
 	right: 0;
-	bottom:2.7%;
+	bottom: 4px;
 	left: 0;
 	position: absolute;
 	background-color: rgba(0,0,0,0.5);
